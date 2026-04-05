@@ -4,118 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adithi Shankar | Research Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/dist/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', -apple-system, sans-serif; color: #333; line-height: 1.6; }
-        .sidebar { background-color: #fcfcfc; min-height: 100vh; padding-top: 3rem; border-right: 1px solid #f0f0f0; }
-        .profile-img { width: 190px; height: 190px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .nav-link { color: #666; font-weight: 500; transition: 0.3s; }
-        .nav-link:hover { color: #007bff; padding-left: 10px; }
-        section { padding: 3.5rem 0; border-bottom: 1px solid #eee; }
-        .pub-title { font-weight: 600; color: #1a1a1a; display: block; text-decoration: none; }
-        .pub-authors { font-size: 0.9rem; color: #555; }
-        .pub-venue { font-size: 0.9rem; font-style: italic; color: #777; }
-        .badge-link { text-decoration: none; font-size: 0.75rem; padding: 0.2rem 0.6rem; border: 1px solid #007bff; color: #007bff; border-radius: 4px; margin-right: 5px; transition: 0.2s; }
-        .badge-link:hover { background-color: #007bff; color: #fff; }
-        .tech-tag { background: #f0f2f5; color: #475569; padding: 0.2rem 0.6rem; border-radius: 15px; font-size: 0.85rem; margin-right: 5px; display: inline-block; margin-bottom: 5px; }
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif; 
+            line-height: 1.7; 
+            color: #333; 
+            background-color: #ffffff;
+        }
+        .container { max-width: 850px; padding: 60px 20px; }
+        .profile-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 1px solid #eee; }
+        h1 { font-weight: 800; color: #111; }
+        h2 { font-size: 1.4rem; font-weight: 700; margin-top: 45px; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 8px; color: #444; }
+        .item-title { font-weight: 600; color: #000; display: block; text-decoration: none; }
+        .item-sub { color: #666; font-size: 0.95rem; }
+        .venue { font-style: italic; color: #555; }
+        .date-label { color: #999; font-size: 0.9rem; float: right; }
+        footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #f8f8f8; color: #bbb; font-size: 0.85rem; text-align: center; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        ul { padding-left: 1.2rem; }
+        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-md-3 col-lg-2 d-md-block sidebar text-center sticky-top">
-            <img src="profile.jpg" alt="Adithi Shankar" class="profile-img">
-            <h4 class="fw-bold">Adithi Shankar</h4>
-            <p class="text-muted small">PhD Student<br>Music Technology Group (UPF)</p>
-            
-            <div class="mb-4">
-                <a href="https://github.com/your-username" class="text-secondary mx-2"><i class="fab fa-github fa-lg"></i></a>
-                <a href="mailto:adithishankar.sivasankar@upf.edu" class="text-secondary mx-2"><i class="fas fa-envelope fa-lg"></i></a>
-                <a href="#" class="text-secondary mx-2"><i class="fas fa-graduation-cap fa-lg"></i></a>
+<div class="container">
+    <header class="mb-5">
+        <div class="row align-items-center">
+            <div class="col-sm-3 text-center text-sm-start">
+                <img src="profile.jpg" alt="Adithi Shankar" class="profile-img">
             </div>
-
-            <ul class="nav flex-column text-start ps-4 small text-uppercase fw-bold ls-wide">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                <li class="nav-item"><a class="nav-link" href="#open-science">Open Science</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            </ul>
-        </nav>
-
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-5">
-            
-            <section id="about">
-                <h2 class="fw-bold">About Me</h2>
-                <p class="mt-4 lead">
-                    I am a third-year PhD student at the <strong>Music Technology Group (MTG)</strong>, Universitat Pompeu Fabra, Barcelona[cite: 5].
-                </p>
-                <p>
-                    My research sits at the intersection of <strong>Music Information Retrieval (MIR)</strong> and <strong>Computer Vision</strong>, focusing on multimodal music analysis and music source separation[cite: 6]. I specialize in bleeding-aware separation for live recordings and gesture-guided systems[cite: 7].
-                </p>
-                <div class="mt-3">
-                    <span class="tech-tag">Python</span> <span class="tech-tag">PyTorch</span> <span class="tech-tag">Librosa</span> 
-                    <span class="tech-tag">OpenCV</span> <span class="tech-tag">MMPose</span> <span class="tech-tag">Essentia</span> [cite: 46, 47, 48, 49]
+            <div class="col-sm-9 text-center text-sm-start">
+                <h1>Adithi Shankar</h1>
+                <p class="lead mb-2">PhD Student at Music Technology Group (UPF)</p>
+                <p class="text-muted mb-3">Barcelona, Spain</p>
+                <div class="links">
+                    <a href="mailto:adithishankar.sivasankar@upf.edu">Email</a> &nbsp;/&nbsp; 
+                    <a href="https://github.com/MTG/compIAM/">GitHub</a> &nbsp;/&nbsp; 
+                    <a href="#">Google Scholar</a>
                 </div>
-            </section>
+            </div>
+        </div>
+    </header>
 
-            <section id="publications">
-                <h2 class="fw-bold">Publications</h2>
-                
-                <div class="mt-4 mb-4">
-                    <span class="pub-title">Disentangling overlapping sources: Improving vocal and violin source separation in carnatic music</span>
-                    <span class="pub-authors"><strong>A. Shankar</strong>, S. Schweinitz, G. Plaja-Roglans, X. Serra, and M. Rocamora[cite: 24].</span><br>
-                    <span class="pub-venue">ICASSP Workshops, Hyderabad, India, 2025[cite: 24].</span><br>
-                    <a href="https://github.com/MTG/compIAM/" class="badge-link">Code</a> [cite: 36]
-                </div>
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a third year PhD student at the Music Technology Group, Universitat Pompeu Fabra, Barcelona, supervised by Prof. Xavier Serra, Dr. Martín Rocamora and Dr. Gloria Haro. 
+        </p>
+        <p>
+            My research focuses on <strong>Music Information Retrieval</strong> and <strong>Computer Vision</strong>, specifically multimodal music analysis and Music Source Separation. I work on real-world challenges in live music recordings, such as bleeding-aware source separation and gesture-guided systems.
+        </p>
+    </section>
 
-                <div class="mb-4">
-                    <span class="pub-title">Saraga Audiovisual: a large multimodal open data collection for the analysis of Carnatic Music</span>
-                    <span class="pub-authors"><strong>A. Shankar</strong>, G. Plaja-Roglans, T. Nuttall, M. Rocamora, and X. Serra[cite: 25].</span><br>
-                    <span class="pub-venue">Proc. of the 25th ISMIR, San Francisco, USA, 2024[cite: 25, 26].</span><br>
-                    <a href="https://zenodo.org/records/15102483" class="badge-link">Dataset</a> [cite: 33]
-                </div>
+    <section>
+        <h2>Publications</h2>
+        
+        <div class="mb-4">
+            <span class="item-title">Disentangling overlapping sources: Improving vocal and violin source separation in carnatic music</span>
+            <span class="item-sub">A. Shankar, S. Schweinitz, G. Plaja-Roglans, X. Serra, and M. Rocamora.</span><br>
+            <span class="venue text-muted">ICASSP Workshops, Hyderabad, India, 2025.</span>
+        </div>
 
-                <div class="mb-4">
-                    <span class="pub-title">Carnatic singing voice separation using cold diffusion on training data with bleeding</span>
-                    <span class="pub-authors">G. Plaja-Roglans, M. Miron, <strong>A. Shankar</strong>, and X. Serra[cite: 27].</span><br>
-                    <span class="pub-venue">24th ISMIR, Milano, Italy, 2023[cite: 27, 28].</span>
-                </div>
-            </section>
+        <div class="mb-4">
+            <span class="item-title">Saraga Audiovisual: a large multimodal open data collection for the analysis of Carnatic Music</span>
+            <span class="item-sub">A. Shankar, G. Plaja-Roglans, T. Nuttall, M. Rocamora, and X. Serra.</span><br>
+            <span class="venue text-muted">Proc. of the 25th Int. Society for Music Information Retrieval Conf., 2024.</span>
+        </div>
 
-            <section id="open-science">
-                <h2 class="fw-bold">Open Science</h2>
-                <div class="mt-4">
-                    <h5>compIAM</h5>
-                    <p class="text-muted small">Standardized implementations and dataset access for Indian Art Music analysis[cite: 34].</p>
-                    <a href="https://github.com/MTG/compIAM/" class="btn btn-sm btn-outline-dark">View Repository</a> [cite: 36]
-                </div>
-            </section>
+        <div class="mb-4">
+            <span class="item-title">Carnatic singing voice separation using cold diffusion on training data with bleeding</span>
+            <span class="item-sub">G. Plaja-Roglans, M. Miron, A. Shankar, and X. Serra.</span><br>
+            <span class="venue text-muted">24th Int. Society for Music Information Retrieval Conf. (ISMIR), 2023.</span>
+        </div>
+    </section>
 
-            <section id="education" class="border-0">
-                <h2 class="fw-bold">Education</h2>
-                <ul class="list-unstyled mt-4">
-                    <li class="mb-3">
-                        <span class="fw-bold">PhD in Information Technology and Communication</span> <span class="float-end text-muted">2023-Present</span><br>
-                        Universitat Pompeu Fabra, Barcelona [cite: 10, 12]
-                    </li>
-                    <li class="mb-3">
-                        <span class="fw-bold">Master in Sound and Music Computing</span> <span class="float-end text-muted">2022-2023</span><br>
-                        Universitat Pompeu Fabra, Barcelona [cite: 11, 13]
-                    </li>
-                    <li class="mb-3">
-                        <span class="fw-bold">B.Tech in Electronics and Communication Engineering</span> <span class="float-end text-muted">2018-2022</span><br>
-                        SASTRA University (Major in Signal Processing) [cite: 15, 16, 17]
-                    </li>
-                </ul>
-            </section>
+    <section>
+        <h2>Teaching & Service</h2>
+        <ul>
+            <li><strong>Teaching Assistant:</strong> Signals and Systems under Prof. Xavier Serra, UPF (2025–Present).</li>
+            <li><strong>Master Thesis Supervision:</strong> Serafin Schweinitz, "A Fine Tuning Strategy to Improve Musical Source Separation Quality for Indian Carnatic Music" (2024–2025).</li>
+            <li><strong>Peer Reviewer:</strong> ISMIR 2025 (Daejeon), ICASSP 2026 (Barcelona).</li>
+        </ul>
+    </section>
 
-            <footer class="text-center py-4 text-muted small border-top">
-                &copy; 2026 Adithi Shankar. Built for reproducible research[cite: 8].
-            </footer>
-        </main>
-    </div>
+    <section>
+        <h2>Education</h2>
+        <div class="mb-3">
+            <span class="date-label">2023–Current</span>
+            <span class="item-title">PhD in Information Technology and Communication</span>
+            <span class="item-sub">Universitat Pompeu Fabra, Barcelona</span>
+        </div>
+        <div class="mb-3">
+            <span class="date-label">2022–2023</span>
+            <span class="item-title">Master's in Sound and Music Computing</span>
+            <span class="item-sub">Universitat Pompeu Fabra, Barcelona</span>
+        </div>
+        <div class="mb-3">
+            <span class="date-label">2018–2022</span>
+            <span class="item-title">B.Tech in Electronics and Communication Engineering</span>
+            <span class="item-sub">SASTRA University, India (Major in Signal Processing)</span>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Adithi Shankar &middot; Built with simplicity.
+    </footer>
 </div>
 
 </body>
